@@ -9,11 +9,7 @@
 </head>
 <body>
     <div id="app">
-        <p>Hello  
-            <span class="bg-gray text-blue" 
-                :class="{large: isLarge,'text-danger':hasError}">Vue.js</span></p>
-        <!-- :の値がtrueだったら表示される -->
-        <!-- class名に-がついているときは''で囲む -->
+        <p>Hello <span :class="classObject">Vue.js</span></p>
     </div>
     <script src="https://unpkg.com/vue@next"></script>
     <script src="js/main.js"></script>

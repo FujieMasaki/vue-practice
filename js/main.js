@@ -1,7 +1,9 @@
 const app = Vue.createApp({
     data: () => ({
-        isLarge: true,
-        hasError: true
+        classObject: {
+            large: true,
+            'text-danger':true
+        }
     })
     })
 app.mount('#app')
