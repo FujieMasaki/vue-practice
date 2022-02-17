@@ -1,36 +1,17 @@
 const app = Vue.createApp({
     data: () => ({
-        
+        km: 0,
+        m: 0
     }),
-    // computed: {
-    //     reversedMessage: function () {
-    //         return this.message.split('').reverse().join('')
-    //     }
-    // },
-    // methods: {
-    //     reversedMessageMethod: function () {
-    //         return this.message.split('').reverse().join('')
-    //     }
-    // }
-    // computed: {
-    //     taxIncludedPrice: {
-    //         get: function () {
-    //             return this.basePrice * 1.1
-    //         },
-    //         set: function (value) {
-    //             this.basePrice = value / 1.1
-    //         }
-    //     }
-    // }
-
-    computed: {
-        computedNumber: function() {
-            return Math.random()
-        }
-    },
-    methods: {
-        methodsNumber: function () {
-            return Math.random()
+    watch: {
+        // 値が変更されたら、走る処理
+        km: function (value) {
+            this.km = value
+            this.m = value * 1000
+        },
+        m: function (value) {
+            this.km = value / 1000
+            this.m = value
         }
     }
     })
