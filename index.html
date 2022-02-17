@@ -9,11 +9,12 @@
 </head>
 <body>
     <div id="app">
-        <p>{{ message }}</p>
+        <!-- <p>{{ message }}</p>
         <p>{{ reversedMessage }}</p>
-        <p>{{ reversedMessageMethod() }}</p>
+        <p>{{ reversedMessageMethod() }}</p> -->
         <!-- methodsを使うときは()が必要 -->
-        
+        <p>base price: <input type="text" v-model="basePrice"></p>
+        <p>tax included price: <input type="text" v-model="taxIncludedPrice"></p>
     </div>
     <script src="https://unpkg.com/vue@next"></script>
     <script src="js/main.js"></script>
