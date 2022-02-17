@@ -5,3 +5,12 @@
 .text-danger{
     color:red;
 }
+
+.bg-gray{
+    background-color: gray;
+}
+
+.text-blue{
+    color:blue;
+}
+/* より後にきじゅつしたstyleが適用される */

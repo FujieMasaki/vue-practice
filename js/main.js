@@ -1,6 +1,6 @@
 const app = Vue.createApp({
     data: () => ({
-        isLarge: false,
+        isLarge: true,
         hasError: true
     })
     })
