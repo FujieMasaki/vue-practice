@@ -9,7 +9,9 @@
 </head>
 <body>
     <div id="app">
-        <p>Hello <span :class="{large: isLarg,'text-danger':hasError}">Vue.js</span></p>
+        <p>Hello  
+            <span class="bg-gray text-blue" 
+                :class="{large: isLarge,'text-danger':hasError}">Vue.js</span></p>
         <!-- :の値がtrueだったら表示される -->
         <!-- class名に-がついているときは''で囲む -->
     </div>
