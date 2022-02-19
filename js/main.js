@@ -1,7 +1,7 @@
 const app = Vue.createApp({
     data: () => ({
         largeClass:{
-            large: true,
+            'large': true,
             'bg-gray': true
         },
         dangerClass:{

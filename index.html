@@ -11,6 +11,8 @@
     <div id="app">
         <p>Hello <span :class="isLarge ? largeClass: ''">Vue.js</span></p>
         <!-- isLargeがtrueだったらLargeClassが適用、falseだったら""が適用される -->
+        <p>Hello <span :class="[isLarge ? largeClass: '', dangerClass]">Vue.js</span></p>
+        <!-- 常にdangerClassが適用される -->
     </div>
     <script src="https://unpkg.com/vue@next"></script>
     <script src="js/main.js"></script>
